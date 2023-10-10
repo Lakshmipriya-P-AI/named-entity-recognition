@@ -36,7 +36,7 @@ To develop an LSTM-based model for recognizing the named entities in the text.
 ## PROGRAM:
 
 ### Libraries:
-python
+python```
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -67,7 +67,7 @@ num_words
 num_tags
 
 ### Defining a Class to get sentence:
-python
+python```
 class SentenceGetter(object):
     def __init__(self, data):
         self.n_sent = 1
@@ -129,7 +129,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 
 
 ### LSTM Model:
-python
+python```
 input_word = layers.Input(shape=(max_len,))
 embedding_layer = layers.Embedding(input_dim = num_words,
                                    output_dim = 50,
@@ -153,9 +153,9 @@ history = model.fit(
     validation_data=(X_test,y_test),
     batch_size=45,
     epochs=3,)
-
+```
 ### Metrics:
-python
+python```
 metrics = pd.DataFrame(model.history.history)
 metrics.head()
 
@@ -173,7 +173,7 @@ print("{:15}{:5}\t {}\n".format("Word", "True", "Pred"))
 print("-" *30)
 for w, true, pred in zip(X_test[i], y_true, p[0]):
     print("{:15}{}\t{}".format(words[w-1], tags[true], tags[pred]))
-
+```
 
 ## OUTPUT:
 
