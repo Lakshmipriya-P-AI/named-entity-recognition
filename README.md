@@ -25,8 +25,6 @@ from tensorflow.keras.preprocessing import sequence
 from sklearn.model_selection import train_test_split
 from keras import layers
 from keras.models import Model
-from google.colab import drive 
-drive.mount('/content/drive')
 data = pd.read_csv("sample_data/ner_dataset.csv", encoding="latin1")
 data.head(50)
 data = data.fillna(method="ffill")
