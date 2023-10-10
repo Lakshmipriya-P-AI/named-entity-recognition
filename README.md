@@ -1,4 +1,3 @@
-
 # Named Entity Recognition
 
 ## AIM
@@ -35,7 +34,7 @@ To develop an LSTM-based model for recognizing the named entities in the text.
 7. We compile the model to fit the train sets and validation sets.
 
 ## PROGRAM:
-```
+
 ### Libraries:
 python
 import matplotlib.pyplot as plt
@@ -130,7 +129,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 
 
 ### LSTM Model:
-
 python
 input_word = layers.Input(shape=(max_len,))
 embedding_layer = layers.Embedding(input_dim = num_words,
@@ -175,20 +173,19 @@ print("{:15}{:5}\t {}\n".format("Word", "True", "Pred"))
 print("-" *30)
 for w, true, pred in zip(X_test[i], y_true, p[0]):
     print("{:15}{}\t{}".format(words[w-1], tags[true], tags[pred]))
-```
+
 
 ## OUTPUT:
 
 ### Training Loss, Validation Loss Vs Iteration Plot:
 
-![image](https://github.com/Lakshmipriya-P-AI/named-entity-recognition/assets/93427923/d05b7015-d471-435f-8019-675bee283689)
+![image](https://github.com/Aashima02/named-entity-recognition/assets/93427086/f3b93925-9723-4d4c-b94a-75a13d4829e5)
 
 ### Accuracy, Validation Accuracy Vs Iteration Plot:
-![image](https://github.com/Lakshmipriya-P-AI/named-entity-recognition/assets/93427923/068c5eb9-b06f-4d22-b9a8-49629b3ec4e4)
+![image](https://github.com/Aashima02/named-entity-recognition/assets/93427086/ffe712a3-66a7-44c1-b176-111cd8d8c7c6)
 
 ### Sample Text Prediction
 ![image](https://github.com/Aashima02/named-entity-recognition/assets/93427086/15d50d56-9c4c-4326-bb82-5fc0b381b7f8)
-
 
 
 ## RESULT:
