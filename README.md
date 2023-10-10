@@ -114,9 +114,11 @@ for w, true, pred in zip(X_test[i], y_true, p[0]):
 ## OUTPUT
 ### Training Loss, Validation Loss Vs Iteration Plot
 
-![table](https://user-images.githubusercontent.com/75234646/198294131-0da03008-ba85-44e0-8378-55a7f5209b5a.png)
-![valacc](https://user-images.githubusercontent.com/75234646/198293926-a8ca3cd5-227f-464c-b286-a878629eaff6.png)
-![valoc](https://user-images.githubusercontent.com/75234646/198294028-bce1ee56-50b7-4aa5-bfa3-e96dae63a5d9.png)
+![image](https://github.com/Lakshmipriya-P-AI/named-entity-recognition/assets/93427923/d05b7015-d471-435f-8019-675bee283689)
+![image](https://github.com/Lakshmipriya-P-AI/named-entity-recognition/assets/93427923/068c5eb9-b06f-4d22-b9a8-49629b3ec4e4)
+
+![image](https://github.com/Lakshmipriya-P-AI/named-entity-recognition/assets/93427923/79a48be5-16e3-45df-96d0-7f407816e1ad)
+
 
 ### Sample Text Prediction
 ![smpale](https://user-images.githubusercontent.com/75234646/198298636-9389ddf0-6304-41ba-932b-29f1682713c4.png)
