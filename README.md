@@ -34,7 +34,7 @@ To develop an LSTM-based model for recognizing the named entities in the text.
 7. We compile the model to fit the train sets and validation sets.
 
 ## PROGRAM:
-```
+
 ### Libraries:
 python
 import matplotlib.pyplot as plt
@@ -173,7 +173,7 @@ print("{:15}{:5}\t {}\n".format("Word", "True", "Pred"))
 print("-" *30)
 for w, true, pred in zip(X_test[i], y_true, p[0]):
     print("{:15}{}\t{}".format(words[w-1], tags[true], tags[pred]))
-```
+
 
 ## OUTPUT:
 
