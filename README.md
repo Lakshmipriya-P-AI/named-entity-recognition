@@ -34,9 +34,9 @@ To develop an LSTM-based model for recognizing the named entities in the text.
 7. We compile the model to fit the train sets and validation sets.
 
 ## PROGRAM:
-
+```
 ### Libraries:
-python```
+python
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -67,7 +67,7 @@ num_words
 num_tags
 
 ### Defining a Class to get sentence:
-python```
+python
 class SentenceGetter(object):
     def __init__(self, data):
         self.n_sent = 1
@@ -129,7 +129,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 
 
 ### LSTM Model:
-python```
+python
 input_word = layers.Input(shape=(max_len,))
 embedding_layer = layers.Embedding(input_dim = num_words,
                                    output_dim = 50,
@@ -153,9 +153,9 @@ history = model.fit(
     validation_data=(X_test,y_test),
     batch_size=45,
     epochs=3,)
-```
+
 ### Metrics:
-python```
+python
 metrics = pd.DataFrame(model.history.history)
 metrics.head()
 
