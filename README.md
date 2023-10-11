@@ -36,7 +36,7 @@ To develop an LSTM-based model for recognizing the named entities in the text.
 ## PROGRAM:
 
 ### Libraries:
-python```
+```python
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -45,7 +45,6 @@ from sklearn.model_selection import train_test_split
 from keras import layers
 from keras.models import Model
 ```
-
 ### Reading, Pre-processing Data:
 python
 data = pd.read_csv("ner_dataset.csv", encoding="latin1")
